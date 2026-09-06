@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions and conversation
+    url: https://github.com/bymaksym/waypack/discussions
+    about: How do I…, packing setups, anything that isn't a defect.
+  - name: 🌍 A word reads wrong in Russian or Ukrainian
+    url: https://github.com/bymaksym/waypack/issues/new?template=bug_report.yml
+    about: Open it as a bug with the screen and the better wording — those texts were never reviewed by a native speaker.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/bymaksym/waypack/security/advisories/new
+    about: Report it privately, never as a public issue.

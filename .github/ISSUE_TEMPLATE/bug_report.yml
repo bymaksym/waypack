@@ -1,0 +1,96 @@
+name: 🐞 Bug report
+description: Something in Waypack is broken or behaves wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Two things before you write:
+
+        **Don't paste your trips.** This repository is public. Screenshots, backups and `.waypack`
+        files carry real names, dates and places, and none of that helps fix a bug. If a screenshot
+        is the only way to show it, blur it or build a throwaway trip that reproduces the problem.
+
+        **If something lost data, say so in the title.** It jumps the queue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what the app did instead.
+      placeholder: I expected the item to stay in the bag after rotating the phone, and it jumped back to the general list.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Step by step, until it broke
+      description: The most useful part of the whole report. Number the steps if you can.
+      placeholder: |
+        1. Open a plan with the mountain scope
+        2. Go to Packing and open a bag
+        3. Drag an item into it
+        4. Rotate the phone
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Waypack version
+      description: Settings → About. It looks like "Version 1.0 (build 1)".
+      placeholder: Version 1.0 (build 1)
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 7a, Android 15
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Which Android is it?
+      description: This app is built with de-Googled phones in mind, so it genuinely matters.
+      options:
+        - Stock Android (came with the phone)
+        - GrapheneOS
+        - CalyxOS
+        - LineageOS or another custom ROM
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: how-often
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time I follow those steps
+        - Often, but not always
+        - It happened once and I couldn't repeat it
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: data-loss
+    attributes:
+      label: Did anything disappear?
+      options:
+        - label: Yes — a trip, items, bags or a backup lost data
+          required: false
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before you submit
+      options:
+        - label: I checked there isn't already an open issue about this
+          required: true
+        - label: There is no personal data of mine or anyone else's in this report
+          required: true
