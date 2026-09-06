@@ -58,7 +58,7 @@ Not "we promise we don't send your data". **The app has no way to send it**: it 
 
 | | |
 | --- | --- |
-| Permissions | **None.** `INTERNET` is explicitly removed from the manifest |
+| Permissions | **Three, and none of them reaches your data or the network:** `USE_BIOMETRIC` and `USE_FINGERPRINT`, so the app lock can ask your phone to authenticate you, and a signature permission of Waypack's own package that only *restricts* access to one of its receivers. `INTERNET` is explicitly removed from the manifest |
 | Database | Encrypted with SQLCipher |
 | Cover photos | Encrypted with the Android Keystore |
 | Backups | Encrypted with a password you choose |

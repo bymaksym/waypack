@@ -61,7 +61,7 @@ se lo impediría.
 
 | | |
 | --- | --- |
-| Permisos | **Ninguno.** `INTERNET` está quitado a propósito del manifiesto |
+| Permisos | **Tres, y ninguno llega a tus datos ni a la red:** `USE_BIOMETRIC` y `USE_FINGERPRINT`, para que el bloqueo de la app pueda pedirle a tu móvil que te autentique, y un permiso de firma del propio paquete de Waypack que solo *restringe* el acceso a uno de sus receptores. `INTERNET` está quitado a propósito del manifiesto |
 | Base de datos | Cifrada con SQLCipher |
 | Portadas | Cifradas con el Keystore de Android |
 | Copias de seguridad | Cifradas con una contraseña que eliges tú |
