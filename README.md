@@ -13,11 +13,16 @@
 
 ---
 
-Waypack organizes your trips and what you pack for them — by day, by bag, by person — and every
-byte of it stays on your phone. There is no account, no sync, no server, no ads and no analytics.
+Waypack organizes your trips and what you pack for them — by day, by bag, by person — and it all
+stays on your phone. There is no account, no sync, no server, no ads and no analytics.
 
 Not "we promise we don't send your data". **The app has no way to send it**: it ships with the
 `INTERNET` permission explicitly removed, so even if it tried, Android would refuse.
+
+The one thing that can leave is a backup, **and only if you ask for it**. The first run asks how you
+want your trips kept — Google's system backup, a folder of your own, or nothing — and the answer
+lives in Settings, where you can change it any day. The encrypted database never leaves under any of
+the three.
 
 > This repository is the home of Waypack's **releases, bug reports and discussions**. The app's
 > source code is not public (yet). See [Is Waypack open source?](#is-waypack-open-source) below.
@@ -50,7 +55,9 @@ Not "we promise we don't send your data". **The app has no way to send it**: it 
 **The whole trip**
 - Legs, places by day, documents and attachments — your passport and your track live with the trip,
   not in a Downloads folder with forty other files.
-- Encrypted backup with your own password, and a file you can hand to whoever travels with you.
+- Backups you choose: Google's system backup, an automatic encrypted file in a folder of your
+  own, or nothing at all. Plus the manual export, with your own password, that you can hand to
+  whoever travels with you.
 - English, Spanish, Russian and Ukrainian, with an in-app language switch.
 - Screenshot blocking, hiding from recents, and an app lock behind your phone's own credential.
 
@@ -62,7 +69,7 @@ Not "we promise we don't send your data". **The app has no way to send it**: it 
 | Database | Encrypted with SQLCipher |
 | Cover photos | Encrypted with the Android Keystore |
 | Backups | Encrypted with a password you choose |
-| Android auto-backup | Off (`allowBackup=false`) — nothing leaves in a system cloud copy |
+| Android auto-backup | Carries **only** the backup you asked for. The rules include a single folder and exclude everything else, so the encrypted database, your settings, covers and attachments never leave. Choose "No, thanks" and the folder is emptied — the system then has nothing to upload |
 | Google Play Services | Not used, not needed. Runs on GrapheneOS and de-Googled phones |
 | Analytics, crash reporting, ads | None |
 

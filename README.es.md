@@ -52,7 +52,9 @@ se lo impediría.
 **El viaje entero**
 - Tramos, lugares por día, documentos y adjuntos: el pasaporte y el track viven con el viaje y no en
   «Descargas» entre otros cuarenta ficheros.
-- Copia de seguridad cifrada con tu contraseña, y un fichero para pasarle el plan a quien viaja
+- Las copias las eliges tú: la del sistema con Google, un fichero cifrado automático en una
+  carpeta tuya, o ninguna. Y encima la exportación a mano, con tu contraseña, para pasarle el
+  plan a quien viaja
   contigo.
 - Español, inglés, ruso y ucraniano, con selector de idioma dentro de la app.
 - Bloqueo de capturas, ocultar en recientes y bloqueo de la app con la credencial del móvil.
@@ -65,7 +67,7 @@ se lo impediría.
 | Base de datos | Cifrada con SQLCipher |
 | Portadas | Cifradas con el Keystore de Android |
 | Copias de seguridad | Cifradas con una contraseña que eliges tú |
-| Copia automática de Android | Apagada (`allowBackup=false`): nada sale en una copia del sistema |
+| Copia automática de Android | Lleva **solo** la copia que hayas pedido. Las reglas incluyen una única carpeta y dejan fuera todo lo demás, así que la base cifrada, tus ajustes, las portadas y los adjuntos no salen nunca. Si eliges «No, gracias» la carpeta se vacía y el sistema no tiene nada que subir |
 | Google Play Services | Ni se usan ni hacen falta. Funciona en GrapheneOS y móviles desgooglizados |
 | Analítica, informes de fallo, anuncios | Nada |
 
