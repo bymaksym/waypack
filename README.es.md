@@ -2,27 +2,21 @@
 
 # Waypack
 
-**Un organizador de equipaje y viajes que no puede conectarse.**
+**Un organizador de equipaje y viajes: qué llevar, por días, por bolsas y por personas.**
 
 [Descargar el APK](https://github.com/bymaksym/waypack/releases/latest) ·
 [Contar un fallo](https://github.com/bymaksym/waypack/issues/new?template=bug_report.yml) ·
-[Política de privacidad](PRIVACY.md) ·
 [Read in English](README.md)
 
 </div>
 
 ---
 
-Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y por personas— y todo se
-queda en tu móvil. Sin cuenta, sin sincronización, sin servidor, sin anuncios y sin analítica.
-
-No es «prometemos que no mandamos tus datos». **La app no tiene con qué mandarlos**: se publica con
-el permiso de `INTERNET` explícitamente quitado del manifiesto, así que aunque lo intentara, Android
-se lo impediría.
+Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y por personas—. Funciona
+entero sin conexión, sin cuenta y sin anuncios.
 
 > Este repositorio es la casa de las **versiones, los fallos y las conversaciones** de Waypack. El
-> código de la app no es público (todavía). Ver [¿Waypack es código abierto?](#waypack-es-código-abierto)
-> más abajo.
+> código de la app no es público (todavía).
 
 ## Qué hace
 
@@ -50,33 +44,20 @@ se lo impediría.
 - Barómetro y altímetro, con lo que el móvil puede saber y lo que no.
 
 **El viaje entero**
-- Tramos, lugares por día, documentos y adjuntos: el pasaporte y el track viven con el viaje y no en
-  «Descargas» entre otros cuarenta ficheros.
-- Las copias las eliges tú: la del sistema con Google, un fichero cifrado automático en una
-  carpeta tuya, o ninguna. Y encima la exportación a mano, con tu contraseña, para pasarle el
-  plan a quien viaja
+- Tramos, lugares por día y documentos: el pasaporte es tuyo, no de un viaje, así que su caducidad
+  está escrita en un solo sitio y Waypack la cruza con los viajes que vengan.
+- Rutas: un `.gpx` o un `.kml` viaja con el viaje en vez de quedarse en «Descargas» entre otros
+  cuarenta ficheros. Solo ficheros de ruta y hasta 10 MB — para un billete o una foto el gestor de
+  ficheros del móvil lo hace mejor.
+- Las copias las eliges tú: la del sistema con Google, un fichero automático en una carpeta tuya, o
+  ninguna. Y encima la exportación a mano, con tu contraseña, para pasarle el plan a quien viaja
   contigo.
 - Español, inglés, ruso y ucraniano, con selector de idioma dentro de la app.
 - Bloqueo de capturas, ocultar en recientes y bloqueo de la app con la credencial del móvil.
 
-## La privacidad, en forma comprobable
-
-| | |
-| --- | --- |
-| Permisos | **Tres, y ninguno llega a tus datos ni a la red:** `USE_BIOMETRIC` y `USE_FINGERPRINT`, para que el bloqueo de la app pueda pedirle a tu móvil que te autentique, y un permiso de firma del propio paquete de Waypack que solo *restringe* el acceso a uno de sus receptores. `INTERNET` está quitado a propósito del manifiesto |
-| Base de datos | Cifrada con SQLCipher |
-| Portadas | Cifradas con el Keystore de Android |
-| Copias de seguridad | Cifradas con una contraseña que eliges tú |
-| Copia automática de Android | Lleva **solo** la copia que hayas pedido. Las reglas incluyen una única carpeta y dejan fuera todo lo demás, así que la base cifrada, tus ajustes, las portadas y los adjuntos no salen nunca. Si eliges «No, gracias» la carpeta se vacía y el sistema no tiene nada que subir |
-| Google Play Services | Ni se usan ni hacen falta. Funciona en GrapheneOS y móviles desgooglizados |
-| Analítica, informes de fallo, anuncios | Nada |
-
-Dentro de la app, **Ajustes → Privacidad → «Verifícalo tú mismo»** enseña los permisos que declara la
-copia en marcha y su huella de firma, para que puedas comprobar todo esto sin fiarte de esta página.
-
 ## Instalar
 
-**Necesita Android 8.0 (API 26) o superior.**
+**Necesita Android 8.0 (API 26) o superior.** No hacen falta los servicios de Google Play.
 
 - **Descarga directa**: coge `app-release.apk` de la
   [última versión](https://github.com/bymaksym/waypack/releases/latest) y ábrelo.
@@ -84,20 +65,11 @@ copia en marcha y su huella de firma, para que puedas comprobar todo esto sin fi
   de avisarte de las versiones nuevas. El nombre del fichero no cambia entre versiones a propósito,
   justo para que eso siga funcionando.
 
-### Comprobar lo que has descargado
-
-Cada versión publica dos huellas. Las dos valen treinta segundos:
+Para comprobar la descarga, compárala con el `.sha256` que se publica con cada versión:
 
 ```
-# 1. El fichero es el que se publicó
-sha256sum app-release.apk        # tiene que coincidir con el .sha256 de la release
-
-# 2. Lo firmó la clave de Waypack y no lo ha reempaquetado otro
-apksigner verify --print-certs app-release.apk
+sha256sum app-release.apk
 ```
-
-La segunda es la que te enseña la app en «Verifícalo tú mismo». Si los tres valores —las notas de la
-versión, tu descarga y la app en marcha— no coinciden, lo que has instalado no ha salido de aquí.
 
 ## Contar un fallo o pedir algo
 
@@ -107,21 +79,16 @@ versión, tu descarga y la app en marcha— no coinciden, lo que has instalado n
   equipaje, y todo lo que no sea un defecto
 - 🔒 Un problema de seguridad va por [SECURITY.md](SECURITY.md), **no** en un issue público
 
-Una petición que aquí importa más que en otras apps: **no pegues tus viajes en un issue**. Las
-capturas y las exportaciones llevan nombres, fechas y lugares reales. Nada de eso ayuda a arreglar un
-fallo, y este repositorio es público. Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+Por favor, **no pegues tus viajes en un issue**: las capturas y las exportaciones llevan nombres,
+fechas y lugares reales, y este repositorio es público. Ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## ¿Waypack es código abierto?
 
 Hoy no. Este repositorio tiene las versiones, los fallos y la documentación; el código de la app vive
-en un repositorio privado.
-
-Es una decisión sobre el código, no sobre la promesa: nada de lo de arriba depende de creerse al
-autor. La lista de permisos la hace cumplir Android, la tarjeta de «Seguridad de los datos» de Google
-Play la rellena Google, y la huella de la firma se comprueba desde la propia app. Si el código se
-abre más adelante, será con una licencia copyleft (GPL o AGPL) y se anunciará aquí.
+en un repositorio privado. Si el código se abre más adelante, será con una licencia copyleft (GPL o
+AGPL) y se anunciará aquí.
 
 ## Licencia
 
-La app se distribuye compilada; todos los derechos reservados. Los documentos de este repositorio
-—este README, la política de privacidad— se pueden citar libremente.
+La app se distribuye compilada; todos los derechos reservados. Los documentos de este repositorio se
+pueden citar libremente. La política de privacidad está en [PRIVACY.md](PRIVACY.md).

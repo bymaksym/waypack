@@ -2,30 +2,21 @@
 
 # Waypack
 
-**A packing and trip organizer that cannot go online.**
+**A packing and trip organizer: what to bring, by day, by bag and by person.**
 
 [Download the latest APK](https://github.com/bymaksym/waypack/releases/latest) ·
 [Report a bug](https://github.com/bymaksym/waypack/issues/new?template=bug_report.yml) ·
-[Privacy policy](PRIVACY.md) ·
 [Leer en español](README.es.md)
 
 </div>
 
 ---
 
-Waypack organizes your trips and what you pack for them — by day, by bag, by person — and it all
-stays on your phone. There is no account, no sync, no server, no ads and no analytics.
-
-Not "we promise we don't send your data". **The app has no way to send it**: it ships with the
-`INTERNET` permission explicitly removed, so even if it tried, Android would refuse.
-
-The one thing that can leave is a backup, **and only if you ask for it**. The first run asks how you
-want your trips kept — Google's system backup, a folder of your own, or nothing — and the answer
-lives in Settings, where you can change it any day. The encrypted database never leaves under any of
-the three.
+Waypack organizes your trips and what you pack for them — by day, by bag, by person. It works
+fully offline, with no account and no ads.
 
 > This repository is the home of Waypack's **releases, bug reports and discussions**. The app's
-> source code is not public (yet). See [Is Waypack open source?](#is-waypack-open-source) below.
+> source code is not public (yet).
 
 ## What it does
 
@@ -53,32 +44,20 @@ the three.
 - Barometer and altimeter, with what a phone can know and what it cannot.
 
 **The whole trip**
-- Legs, places by day, documents and attachments — your passport and your track live with the trip,
-  not in a Downloads folder with forty other files.
-- Backups you choose: Google's system backup, an automatic encrypted file in a folder of your
-  own, or nothing at all. Plus the manual export, with your own password, that you can hand to
-  whoever travels with you.
+- Legs, places by day, and documents — your passport is yours, not a trip's, so its expiry date is
+  written in one place and Waypack crosses it against the trips still to come.
+- Routes: a `.gpx` or a `.kml` travels with the trip instead of sitting in a Downloads folder with
+  forty other files. Route files only, up to 10 MB — for a ticket or a photo your phone's file
+  manager does it better.
+- Backups you choose: Google's system backup, an automatic file in a folder of your own, or nothing
+  at all. Plus a manual export, with your own password, that you can hand to whoever travels with
+  you.
 - English, Spanish, Russian and Ukrainian, with an in-app language switch.
 - Screenshot blocking, hiding from recents, and an app lock behind your phone's own credential.
 
-## Privacy, in checkable form
-
-| | |
-| --- | --- |
-| Permissions | **Three, and none of them reaches your data or the network:** `USE_BIOMETRIC` and `USE_FINGERPRINT`, so the app lock can ask your phone to authenticate you, and a signature permission of Waypack's own package that only *restricts* access to one of its receivers. `INTERNET` is explicitly removed from the manifest |
-| Database | Encrypted with SQLCipher |
-| Cover photos | Encrypted with the Android Keystore |
-| Backups | Encrypted with a password you choose |
-| Android auto-backup | Carries **only** the backup you asked for. The rules include a single folder and exclude everything else, so the encrypted database, your settings, covers and attachments never leave. Choose "No, thanks" and the folder is emptied — the system then has nothing to upload |
-| Google Play Services | Not used, not needed. Runs on GrapheneOS and de-Googled phones |
-| Analytics, crash reporting, ads | None |
-
-Inside the app, **Settings → Privacy → "Verify it yourself"** shows the permissions the running app
-declares and its signing fingerprint, so you can check all of the above without trusting this page.
-
 ## Install
 
-**Requires Android 8.0 (API 26) or newer.**
+**Requires Android 8.0 (API 26) or newer.** No Google Play Services needed.
 
 - **Direct download** — grab `app-release.apk` from the
   [latest release](https://github.com/bymaksym/waypack/releases/latest) and open it.
@@ -86,21 +65,11 @@ declares and its signing fingerprint, so you can check all of the above without 
   track new versions for you. The APK's filename stays the same on purpose so that this keeps
   working.
 
-### Verify what you downloaded
-
-Every release lists two fingerprints. Both are worth thirty seconds:
+To check your download, compare it against the `.sha256` published with each release:
 
 ```
-# 1. The file is the one that was published
-sha256sum app-release.apk        # must match the .sha256 in the release
-
-# 2. It was signed with Waypack's key and not repackaged by someone else
-apksigner verify --print-certs app-release.apk
+sha256sum app-release.apk
 ```
-
-That second fingerprint is the one the app shows you under **Verify it yourself**. If the three
-values — the release notes, your download, and the running app — don't all agree, whatever you
-installed did not come from here.
 
 ## Report a bug or ask for something
 
@@ -110,21 +79,16 @@ installed did not come from here.
   anything that isn't a defect
 - 🔒 A security problem goes to [SECURITY.md](SECURITY.md), **not** to a public issue
 
-One request that matters here more than in most apps: **don't paste your trips into an issue**.
-Screenshots and exports carry real names, dates and places. Nothing of that helps a bug report, and
-this repository is public. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Please **don't paste your trips into an issue**: screenshots and exports carry real names, dates
+and places, and this repository is public. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Is Waypack open source?
 
 Not today. This repository holds the releases, the issue tracker and the docs; the app's code lives
-in a private repository.
-
-That is a decision about the code, not about the promise: nothing here depends on trusting the
-author's word. The permission list is enforced by Android, the Data safety card on Google Play is
-filled in by Google, and the signing fingerprint is checkable from the app itself. If the code is
-opened later it will be under a copyleft license (GPL or AGPL) and it will be announced here.
+in a private repository. If the code is opened later it will be under a copyleft license (GPL or
+AGPL) and it will be announced here.
 
 ## Licence
 
 The app is distributed as a compiled binary; all rights reserved. The documents in this repository
-(this README, the privacy policy) may be quoted freely.
+may be quoted freely. The privacy policy is in [PRIVACY.md](PRIVACY.md).
