@@ -12,8 +12,7 @@
 
 ---
 
-Waypack organizes your trips and what you pack for them — by day, by bag, by person. It works
-fully offline, with no account and no ads.
+Waypack organizes your trips and what you pack for them — by day, by bag, by person.
 
 > This repository is the home of Waypack's **releases, bug reports and discussions**. The app's
 > source code is not public (yet).
@@ -49,11 +48,7 @@ fully offline, with no account and no ads.
 - Routes: a `.gpx` or a `.kml` travels with the trip instead of sitting in a Downloads folder with
   forty other files. Route files only, up to 10 MB — for a ticket or a photo your phone's file
   manager does it better.
-- Backups you choose: Google's system backup, an automatic file in a folder of your own, or nothing
-  at all. Plus a manual export, with your own password, that you can hand to whoever travels with
-  you.
 - English, Spanish, Russian and Ukrainian, with an in-app language switch.
-- Screenshot blocking, hiding from recents, and an app lock behind your phone's own credential.
 
 ## Install
 

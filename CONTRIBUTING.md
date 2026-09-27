@@ -40,7 +40,7 @@ Some things are **out of scope on purpose**, and no amount of asking will move t
 - Ads, analytics, or a "crash reporting" SDK.
 - Anything that requires Google Play Services.
 
-Handing a trip to another person already works, offline, through the `.waypack` file.
+Handing a trip to another person already works, through the `.waypack` file.
 
 ## Questions and conversations
 

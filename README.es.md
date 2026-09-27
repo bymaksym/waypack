@@ -12,8 +12,7 @@
 
 ---
 
-Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y por personas—. Funciona
-entero sin conexión, sin cuenta y sin anuncios.
+Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y por personas—.
 
 > Este repositorio es la casa de las **versiones, los fallos y las conversaciones** de Waypack. El
 > código de la app no es público (todavía).
@@ -49,11 +48,7 @@ entero sin conexión, sin cuenta y sin anuncios.
 - Rutas: un `.gpx` o un `.kml` viaja con el viaje en vez de quedarse en «Descargas» entre otros
   cuarenta ficheros. Solo ficheros de ruta y hasta 10 MB — para un billete o una foto el gestor de
   ficheros del móvil lo hace mejor.
-- Las copias las eliges tú: la del sistema con Google, un fichero automático en una carpeta tuya, o
-  ninguna. Y encima la exportación a mano, con tu contraseña, para pasarle el plan a quien viaja
-  contigo.
 - Español, inglés, ruso y ucraniano, con selector de idioma dentro de la app.
-- Bloqueo de capturas, ocultar en recientes y bloqueo de la app con la credencial del móvil.
 
 ## Instalar
 

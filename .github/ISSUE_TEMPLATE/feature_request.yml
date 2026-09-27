@@ -41,7 +41,7 @@ body:
       description: >
         Waypack ships with no INTERNET permission and that is the product, not a stage it will grow
         out of. Anything needing a server, an account or live sync is out of scope for good.
-        Handing a trip to another person already works offline through the .waypack file.
+        Handing a trip to another person already works through the .waypack file.
       options:
         - label: What I'm asking for doesn't need a server, an account or an internet connection
           required: true
