@@ -72,6 +72,8 @@ sha256sum app-release.apk
 - 💡 [Feature request](https://github.com/bymaksym/waypack/issues/new?template=feature_request.yml)
 - 💬 [Discussions](https://github.com/bymaksym/waypack/discussions) — questions, packing setups,
   anything that isn't a defect
+- 🏠 [Discord — ByMaksymDev Labs](https://discord.gg/ctDJjFF9yT) — the same, but out loud. Waypack has its own
+  channel there
 - 🔒 A security problem goes to [SECURITY.md](SECURITY.md), **not** to a public issue
 
 Please **don't paste your trips into an issue**: screenshots and exports carry real names, dates
