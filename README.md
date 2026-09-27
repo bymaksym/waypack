@@ -1,6 +1,6 @@
 <div align="center">
 
-# Waypack
+<img src="assets/banner.png" alt="Waypack — pack by day, by bag and by person" width="100%">
 
 **A packing and trip organizer: what to bring, by day, by bag and by person.**
 
@@ -16,6 +16,12 @@ Waypack organizes your trips and what you pack for them — by day, by bag, by p
 
 > This repository is the home of Waypack's **releases, bug reports and discussions**. The app's
 > source code is not public (yet).
+
+<p align="center">
+  <img src="assets/screen-two-checks.png" alt="Two checks, not one: ready to go, and actually in the bag" width="44%">
+  &nbsp;&nbsp;
+  <img src="assets/screen-day-by-day.png" alt="Day by day: what you need, on the day you need it" width="44%">
+</p>
 
 ## What it does
 

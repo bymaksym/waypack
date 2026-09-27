@@ -1,6 +1,6 @@
 <div align="center">
 
-# Waypack
+<img src="assets/banner.png" alt="Waypack — equipaje por días, por bolsas y por personas" width="100%">
 
 **Un organizador de equipaje y viajes: qué llevar, por días, por bolsas y por personas.**
 
@@ -16,6 +16,12 @@ Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y 
 
 > Este repositorio es la casa de las **versiones, los fallos y las conversaciones** de Waypack. El
 > código de la app no es público (todavía).
+
+<p align="center">
+  <img src="assets/screen-two-checks.png" alt="Dos checks, no uno: preparado, y de verdad en la bolsa" width="44%">
+  &nbsp;&nbsp;
+  <img src="assets/screen-day-by-day.png" alt="Día a día: lo que necesitas, el día que lo necesitas" width="44%">
+</p>
 
 ## Qué hace
 
