@@ -17,12 +17,6 @@ Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y 
 > Este repositorio es la casa de las **versiones, los fallos y las conversaciones** de Waypack. El
 > código de la app no es público (todavía).
 
-<p align="center">
-  <img src="assets/screen-two-checks.png" alt="Dos checks, no uno: preparado, y de verdad en la bolsa" width="44%">
-  &nbsp;&nbsp;
-  <img src="assets/screen-day-by-day.png" alt="Día a día: lo que necesitas, el día que lo necesitas" width="44%">
-</p>
-
 ## Qué hace
 
 **El equipaje**
@@ -93,5 +87,5 @@ AGPL) y se anunciará aquí.
 
 ## Licencia
 
-La app se distribuye compilada; todos los derechos reservados. Los documentos de este repositorio se
-pueden citar libremente. La política de privacidad está en [PRIVACY.md](PRIVACY.md).
+La app se distribuye compilada; todos los derechos reservados — ver [LICENSE](LICENSE). Los
+documentos de este repositorio se pueden citar libremente. La política de privacidad está en [PRIVACY.md](PRIVACY.md).
