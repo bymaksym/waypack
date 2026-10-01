@@ -20,7 +20,8 @@ Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y 
 ## Qué hace
 
 **El equipaje**
-- Listas por viaje, por categorías, por días y por bolsas.
+- Listas por viaje, por categorías, por días y por bolsas — y salidas cortas, para el gimnasio o
+  casa de un amigo: una nota con lo poco que no puedes olvidar, en vez de un viaje entero.
 - Doble check —*preparado* y *en la bolsa*— y un *¿está listo?* para lo que puede estar guardado y
   no servir, como una cámara con la batería a cero.
 - Unidades de verdad (unidades, pares, ml, g): la bolsa de líquidos se suma sola.
@@ -43,6 +44,7 @@ Waypack organiza tus viajes y lo que llevas en ellos —por días, por bolsas y 
 - Barómetro y altímetro, con lo que el móvil puede saber y lo que no.
 
 **El viaje entero**
+- Cambia las fechas de un plan y todo se mueve con ellas: lo de cada día, los lugares y los tramos.
 - Tramos, lugares por día y documentos: el pasaporte es tuyo, no de un viaje, así que su caducidad
   está escrita en un solo sitio y Waypack la cruza con los viajes que vengan.
 - Rutas: un `.gpx` o un `.kml` viaja con el viaje en vez de quedarse en «Descargas» entre otros

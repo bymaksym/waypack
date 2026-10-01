@@ -20,7 +20,8 @@ Waypack organizes your trips and what you pack for them — by day, by bag, by p
 ## What it does
 
 **Packing**
-- Packing lists per trip, by category, by day and by bag.
+- Packing lists per trip, by category, by day and by bag — and short outings, for the gym or a
+  friend's place: a note with the few things you must not forget, instead of a whole trip.
 - A two-stage check — *prepared* and *in the bag* — plus *is it ready?* for the things that can sit
   packed and still be useless, like a camera with a flat battery.
 - Real units (pieces, pairs, ml, g), so the liquids bag adds itself up.
@@ -43,6 +44,7 @@ Waypack organizes your trips and what you pack for them — by day, by bag, by p
 - Barometer and altimeter, with what a phone can know and what it cannot.
 
 **The whole trip**
+- Change a plan's dates and everything moves with them: what goes on each day, places and legs.
 - Legs, places by day, and documents — your passport is yours, not a trip's, so its expiry date is
   written in one place and Waypack crosses it against the trips still to come.
 - Routes: a `.gpx` or a `.kml` travels with the trip instead of sitting in a Downloads folder with
