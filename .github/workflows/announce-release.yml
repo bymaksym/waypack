@@ -1,0 +1,45 @@
+# Posts each published release to the Discord announcements channel, as a proper post: title,
+# what's new, the app icon and a ping to the release role. GitHub's own Discord webhook only sends
+# a one-line notice signed by whoever published, so that webhook is not used.
+#
+# Needs a repo secret DISCORD_WEBHOOK_URL (the channel's webhook, without /github) and, to ping,
+# a repo variable DISCORD_RELEASES_ROLE_ID. Without the secret it prints what it would have sent
+# and stops, so nothing breaks before Discord is set up.
+#
+# Run it by hand (Actions → Announce release → Run workflow) to announce a release that came out
+# before this existed; an empty tag means the latest one.
+
+name: Announce release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release to announce (empty = the latest)
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  discord:
+    if: github.event_name == 'workflow_dispatch' || !github.event.release.prerelease
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+
+      - name: Post to Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_ROLE_ID: ${{ vars.DISCORD_RELEASES_ROLE_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          APP: Waypack
+          COLOR: '14438186'
+          ICON: https://raw.githubusercontent.com/bymaksym/waypack/main/assets/icon.png
+          FOOTER: Android · GitHub Releases
+        run: python3 .github/scripts/announce-release.py
