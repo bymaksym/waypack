@@ -1,6 +1,6 @@
 # Privacy Policy — Waypack
 
-**Last updated: 9 September 2026**
+**Last updated: 14 October 2026**
 
 *[Versión en español más abajo.](#política-de-privacidad--waypack)*
 
@@ -14,10 +14,11 @@ The developer has no server, and **cannot** see, receive, store or retrieve anyt
 people, places, documents, attachments and any cover photos you choose — is stored **only in your
 device's local storage**, encrypted.
 
-**Backups: you choose, on first run.** The first time you open Waypack it asks one question, and you
-can change the answer at any time in **Settings → Backup**:
+**Backups: on by default where Google backup exists, and yours to change.** On phones with Google
+Play Services, Waypack turns on the Google backup when you finish the welcome screen. On phones
+without them nothing is turned on. You can change it at any time in **Settings → Backup**:
 
-- **Google backup.** Waypack places one encrypted backup file in a private folder, and Android's own
+- **Google backup** (the default on phones with Google Play Services). Waypack places one encrypted backup file in a private folder, and Android's own
   system backup uploads it to your Google account together with the rest of your phone's backup.
   This is the only setting under which anything you wrote leaves your device. What travels is a
   file, encrypted, that Android additionally encrypts with your screen lock before uploading; the
@@ -26,7 +27,8 @@ can change the answer at any time in **Settings → Backup**:
 - **A folder you choose.** Waypack writes an encrypted backup into a folder you pick, using a
   password you pick. Waypack itself never uploads anything; if that folder happens to be synced by
   another app you have installed, the sync is that app's doing and under your control.
-- **No, thanks.** Nothing leaves your device automatically. This is the default until you answer.
+- **No, thanks.** Nothing leaves your device automatically. This is what you get on phones without
+  Google Play Services, and on any phone as soon as you choose it.
 
 **What never leaves, under any setting.** The encrypted database itself, your settings, your cover
 photos and your attachments are excluded from every system backup and from phone-to-phone transfer.
@@ -57,7 +59,7 @@ enabling them.
 
 # Política de privacidad — Waypack
 
-**Última actualización: 9 de septiembre de 2026**
+**Última actualización: 14 de octubre de 2026**
 
 Waypack es una aplicación **100% sin conexión** para organizar tus viajes y tu equipaje.
 
@@ -70,11 +72,12 @@ almacenar ni recuperar nada de lo que escribes.
 cantidades, bolsas, personas, lugares, documentos, adjuntos y las fotos de portada que elijas— se
 guarda **únicamente en el almacenamiento local de tu dispositivo**, cifrado.
 
-**Las copias de seguridad las eliges tú, la primera vez que abres la app.** Waypack te hace una sola
-pregunta al empezar, y puedes cambiar la respuesta cuando quieras en **Ajustes → Copia de
-seguridad**:
+**Las copias de seguridad: activadas por defecto donde existe la copia de Google, y las cambias
+tú.** En los teléfonos con Google Play Services, Waypack activa la copia de Google al terminar la
+pantalla de bienvenida. En los que no los tienen no se activa nada. Puedes cambiarlo cuando quieras
+en **Ajustes → Copia de seguridad**:
 
-- **Copia de Google.** Waypack deja un fichero de copia cifrado en una carpeta privada, y la copia
+- **Copia de Google** (la opción por defecto en teléfonos con Google Play Services). Waypack deja un fichero de copia cifrado en una carpeta privada, y la copia
   del propio sistema Android lo sube a tu cuenta de Google junto con el resto de la copia de tu
   teléfono. Es la única opción con la que algo de lo que has escrito sale de tu dispositivo. Lo que
   viaja es un fichero cifrado, que Android además cifra con el bloqueo de tu pantalla antes de
@@ -84,8 +87,8 @@ seguridad**:
 - **Una carpeta que tú elijas.** Waypack escribe una copia cifrada en la carpeta que le indiques, con
   una contraseña que eliges tú. Waypack no sube nada por su cuenta; si esa carpeta la sincroniza otra
   app que tengas instalada, esa sincronización es cosa de esa app y está bajo tu control.
-- **No, gracias.** No sale nada de tu dispositivo de forma automática. Es lo que hay hasta que
-  contestes.
+- **No, gracias.** No sale nada de tu dispositivo de forma automática. Es lo que tienes en los
+  teléfonos sin Google Play Services, y en cualquiera en cuanto lo elijas.
 
 **Lo que no sale nunca, elijas lo que elijas.** La base de datos cifrada, tus ajustes, tus fotos de
 portada y tus adjuntos quedan excluidos de toda copia del sistema y de la transferencia entre
