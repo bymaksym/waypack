@@ -1,14 +1,29 @@
 # Privacy Policy — Waypack
 
-**Last updated: 14 October 2026**
+**Last updated: 28 October 2026**
 
 *[Versión en español más abajo.](#política-de-privacidad--waypack)*
 
-Waypack is a **100% offline** app for organizing your trips and your packing.
+Waypack is an app for organizing your trips and your packing that **works offline**.
 
-**We collect no data.** Waypack requests no Internet permission — it is explicitly removed from the
-app's manifest — contains no ads or trackers, and uses no analytics services or third-party SDKs.
-The developer has no server, and **cannot** see, receive, store or retrieve anything you write.
+**We collect no data.** Waypack contains no ads or trackers, and uses no analytics services or
+third-party SDKs. The developer has no server, and **cannot** see, receive, store or retrieve
+anything you write.
+
+**What Waypack connects to, and when.** Since version 1.3.0 Waypack uses the Internet for two things
+only, and neither carries anything from your trips:
+
+- **The map.** When you look at the map or save an area to use it offline, Waypack downloads the map
+  images (tiles) from **OpenFreeMap** (tiles.openfreemap.org), with OpenStreetMap data. That request
+  tells OpenFreeMap which area of the map is being viewed and, like any connection, carries your IP
+  address. OpenFreeMap handles it under its own privacy policy. You can turn the map's Internet off
+  in **Settings → Offline maps**; the map then shows only the areas you saved.
+- **A shared map link, if you ask.** If you share a Google Maps, Apple Maps or Mapy link with
+  Waypack and tap «Get it from…», Waypack asks that service where the link points and, for a shared
+  Google list, which places it has. Only the link travels, plus your IP address as in any
+  connection; no cookies and no account. If you don't tap it, nothing connects.
+
+Nothing else goes out: Waypack's connections are limited, inside the app, to those servers alone.
 
 **Your data stays on your device.** Everything you enter — trips, packing lists, quantities, bags,
 people, places, documents, attachments and any cover photos you choose — is stored **only in your
@@ -33,8 +48,18 @@ without them nothing is turned on. You can change it at any time in **Settings �
 **What never leaves, under any setting.** The encrypted database itself, your settings, your cover
 photos and your attachments are excluded from every system backup and from phone-to-phone transfer.
 
-**Even so, Waypack still has no Internet permission.** In the Google option the upload is performed
-by the Android operating system, not by the app. Waypack cannot open a network connection at all.
+**The backup upload is not Waypack's doing.** In the Google option the upload is performed by the
+Android operating system, not by the app, and the app's own connections (the map and links, above)
+never carry your data.
+
+**Your location, only when you ask.** «Nearby» and «I'm here» in Places ask for your location at the
+moment you use them, never at start-up. It is read once on your phone, without Google Play
+Services, used for that one thing and **not stored**. Waypack never asks for background location.
+Everything works without granting it.
+
+**Dictation.** Adding items by voice uses your phone's speech service, not Waypack: Waypack has no
+microphone permission and only receives the text. Depending on how your phone is set up, that
+service may process the audio online; Waypack tells you so before the first use.
 
 **No accounts.** No sign-up or login is required.
 
@@ -59,14 +84,30 @@ enabling them.
 
 # Política de privacidad — Waypack
 
-**Última actualización: 14 de octubre de 2026**
+**Última actualización: 28 de octubre de 2026**
 
-Waypack es una aplicación **100% sin conexión** para organizar tus viajes y tu equipaje.
+Waypack es una aplicación para organizar tus viajes y tu equipaje que **funciona sin conexión**.
 
-**No recopilamos ningún dato.** Waypack no pide permiso de acceso a Internet —está explícitamente
-quitado del manifiesto de la app—, no contiene anuncios ni rastreadores, y no utiliza servicios de
-analítica ni SDK de terceros. El desarrollador no tiene ningún servidor y **no** puede ver, recibir,
-almacenar ni recuperar nada de lo que escribes.
+**No recopilamos ningún dato.** Waypack no contiene anuncios ni rastreadores, y no utiliza servicios
+de analítica ni SDK de terceros. El desarrollador no tiene ningún servidor y **no** puede ver,
+recibir, almacenar ni recuperar nada de lo que escribes.
+
+**A qué se conecta Waypack, y cuándo.** Desde la versión 1.3.0 Waypack usa Internet para dos cosas
+y nada más, y ninguna lleva nada de tus viajes:
+
+- **El mapa.** Al mirar el mapa o al guardar una zona para usarla sin conexión, Waypack pide las
+  imágenes del mapa (teselas) a **OpenFreeMap** (tiles.openfreemap.org), con datos de
+  OpenStreetMap. Esa petición dice qué zona del mapa se está viendo y, como cualquier conexión,
+  lleva tu dirección IP. OpenFreeMap la trata según su propia política de privacidad. Puedes apagar
+  el uso de Internet del mapa en **Ajustes → Mapas sin conexión**; entonces el mapa solo enseña las
+  zonas que hayas guardado.
+- **Un enlace de mapa compartido, si lo pides.** Si compartes con Waypack un enlace de Google Maps,
+  Apple Maps o Mapy y tocas «Traer de…», Waypack le pregunta a ese servicio a dónde lleva el enlace
+  y, si es una lista compartida de Google, qué sitios tiene. Solo viaja el enlace y, como en
+  cualquier conexión, tu dirección IP; sin cookies ni cuenta. Si no lo tocas, no se conecta.
+
+No sale nada más: las conexiones de Waypack están limitadas, dentro de la app, a esos servidores y a
+ninguno más.
 
 **Tus datos se quedan en tu dispositivo.** Todo lo que introduces —viajes, listas de equipaje,
 cantidades, bolsas, personas, lugares, documentos, adjuntos y las fotos de portada que elijas— se
@@ -94,8 +135,18 @@ en **Ajustes → Copia de seguridad**:
 portada y tus adjuntos quedan excluidos de toda copia del sistema y de la transferencia entre
 móviles.
 
-**Y aun así Waypack sigue sin permiso de Internet.** En la opción de Google, la subida la hace el
-sistema operativo Android, no la app. Waypack no puede abrir una conexión de red en absoluto.
+**La subida de la copia no la hace Waypack.** En la opción de Google, la subida la hace el sistema
+operativo Android, no la app, y las conexiones de la propia app (el mapa y los enlaces, más arriba)
+no llevan nunca tus datos.
+
+**Tu ubicación, solo cuando la pides.** «Cerca» y «Estoy aquí», en Lugares, piden tu ubicación en el
+momento de usarlos, nunca al arrancar. Se lee una vez en tu teléfono, sin Google Play Services, se
+usa para eso y **no se guarda**. Waypack no pide nunca la ubicación en segundo plano. Todo funciona
+sin concederla.
+
+**El dictado.** Añadir cosas por voz usa el servicio de voz de tu teléfono, no Waypack: Waypack no
+tiene permiso de micrófono y solo recibe el texto. Según cómo tengas el teléfono, ese servicio puede
+procesar el audio por Internet; Waypack te lo dice antes del primer uso.
 
 **Sin cuentas.** No necesitas registrarte ni iniciar sesión.
 

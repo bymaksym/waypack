@@ -22,8 +22,11 @@ you unless you'd rather stay anonymous.
 
 Especially interesting:
 
-- Anything that gets data **out of the device** — the app declares no `INTERNET` permission, so a
-  path around that is a serious finding.
+- Anything that gets data **out of the device**. Since 1.3.0 the app does use the Internet, for two
+  things only: map tiles from `tiles.openfreemap.org`, and reading a shared Google Maps, Apple Maps or
+  Mapy link when the user taps «Get it from…». Each goes through its own client that refuses every
+  other host before connecting. Reaching any other server, or getting anything from a trip into one
+  of those requests, is a serious finding.
 - **Anything leaving through the system backup that the user did not choose.** The backup rules
   include exactly one folder, `files/cloud/`, and Android excludes everything else on its own. If
   the encrypted database, the settings, the covers or the attachments can be made to travel in a
